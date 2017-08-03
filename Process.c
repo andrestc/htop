@@ -417,6 +417,7 @@ void Process_writeField(Process* this, RichString* str, ProcessField field) {
          return;
       }
    }
+   case HELLO: xSnprintf(buffer, n, "%s", "World!"); break;
    case MAJFLT: Process_colorNumber(str, this->majflt, coloring); return;
    case MINFLT: Process_colorNumber(str, this->minflt, coloring); return;
    case M_RESIDENT: Process_humanNumber(str, this->m_resident * PAGE_SIZE_KB, coloring); return;

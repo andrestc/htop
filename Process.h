@@ -52,6 +52,7 @@ typedef enum ProcessFields {
    TIME = 50,
    NLWP = 51,
    TGID = 52,
+   HELLO = 53,
 } ProcessField;
 
 typedef struct ProcessPidColumn_ {
